@@ -9,4 +9,4 @@ o modificando elementos.
 
 La region crítica se puede dar en InMemoryBlueprintPersistence en cualquiera de sus metodos ya que en su mayoria son set o get,usando contenedores para los planos que sean concurrentes como lo es un ConcurrentHashMap.
 
-Los verbos REST asociados a la region critica serian GET y PUT.
+Los verbos REST asociados a la region critica serian GET, PUT y POST.

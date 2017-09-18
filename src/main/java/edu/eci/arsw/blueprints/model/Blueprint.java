@@ -4,17 +4,18 @@ package edu.eci.arsw.blueprints.model;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collections;
 import java.util.List;
 import java.util.Objects;
 
 
 public class Blueprint {
 
-    private String author=null;
+    private String author;
     
-    private List<Point> points=null;
+    private List<Point> points=Collections.synchronizedList(new ArrayList());
     
-    private String name=null;
+    private String name;
             
     public Blueprint(String author,String name,Point[] pnts){
         this.author=author;
@@ -24,7 +25,7 @@ public class Blueprint {
          
     public Blueprint(String author, String name){
         this.name=name;
-        points=new ArrayList<>();
+        points=Collections.synchronizedList(new ArrayList());
     }
 
     public Blueprint() {

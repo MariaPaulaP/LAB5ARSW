@@ -69,8 +69,6 @@ public class BlueprintAPIController {
         }
     }
     @RequestMapping(path = "/{author}/{bpname}", method = RequestMethod.PUT)
-    //@Consumes({ MediaType.APPLICATION_JSON, MediaType.APPLICATION_XML})
-    //@Produces({ MediaType.APPLICATION_JSON, MediaType.APPLICATION_XML })
     public ResponseEntity<?> manejadorPutBluePrint(@PathVariable String author, @PathVariable String bpname, @RequestBody Blueprint o){
         try {
             bp.RemoveBluePrint(author,bpname);
@@ -82,8 +80,6 @@ public class BlueprintAPIController {
         }   
     }
     @RequestMapping(path = "/{author}/{bpname}", method = RequestMethod.DELETE)
-    //@Consumes({ MediaType.APPLICATION_JSON, MediaType.APPLICATION_XML})
-    //@Produces({ MediaType.APPLICATION_JSON, MediaType.APPLICATION_XML })
     public ResponseEntity<?> manejadorDeleteBluePrint(@PathVariable String author, @PathVariable String bpname, @RequestBody Blueprint o){
         try {
             bp.RemoveBluePrint(author,bpname);

@@ -89,11 +89,9 @@ public class InMemoryBlueprintPersistence implements BlueprintsPersistence {
         Set<Blueprint> r = new HashSet<>();
         for (Tuple key : blueprints.keySet()) {
             r.add(blueprints.get(key));
-
         }
         return r;
     }
-
     /**
      *
      * @param author blueprint's author

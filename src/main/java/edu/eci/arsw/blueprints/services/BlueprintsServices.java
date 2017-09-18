@@ -23,14 +23,6 @@ public class BlueprintsServices {
     @Autowired
     BlueprintsPersistence bpp;
 
-    /*    public BlueprintsPersistence getBpp() {
-        return bpp;
-    }
-
-    public void setBpp(BlueprintsPersistence bpp) {
-        this.bpp = bpp;
-    }
-     */
     public void addNewBlueprint(Blueprint bp) throws BlueprintPersistenceException {
         bpp.saveBlueprint(bp);
 
